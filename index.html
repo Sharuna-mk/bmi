@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.freepik.com/512/3373/3373123.png">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <!-- Left side content -->
+            </div>
+            <div class="col-6 border border-2 bg-light shadow mt-5 w-50">
+               
+                <h1 class="text-primary mt-5 text-center fs-4 fw-bold" style="margin-right: 10%;">
+                     <img class="me-3" width="50px" height="50px" src="https://play-lh.googleusercontent.com/bUqZ8Gg0mkmAxSyEja_gEmOFQwsVjzlxJdS_Pcd9XgoVTmUHgAPm7fXshBdACsGuB04" alt="">BMI CALCULATOR</h1>
+                <p class="text-center mt-2">Calculate Your Body Mass Index</p>
+                 <div class="row">
+                <div class="col-6 mt-4">
+                    <p class="mt-2 fw-bold">Gender</p>
+                    <input type="radio" id="male" name="gender" value="male" class="mt-2">
+                    <label for="male" >Male</label>
+                    <input type="radio"  name="gender"id="female" value="female">
+                    <label for="female" >Female</label>
+                     
+                     <p class="mt-5 fw-bold">Height</p>
+                    <input id="height" type="text" class="form-control mt-3" placeholder="enter your height">
+                      
+                    <!-- <button class="btn btn-warning mt-3" onclick="cm()" id="cm">cm</button>
+                    <button class="btn btn-warning mt-3" onclick="ft()"id="ft">ft</button> -->
+                </div>
+                <div class="col-6 mt-4">
+                  <p class="mt-2 fw-bold">Age</p>
+                  <input id="age"type="number" class="form-control mt-3" placeholder="2-20 years">
+                   
+                  <p style="margin-top: 11%;"class="fw-bold" >Weight</p>
+                  <input id="weight"type="number" class="form-control mt-3" placeholder="enter your weight in kg">
+                 
+                </div>
+                </div>
+                <button class="btn btn-warning w-100 mt-5" onclick="calculate()">Calculate</button>
+                <button class="border border-warning w-25 mt-2 " style="margin-left: 36%;" onclick="reset()">Reset</button>
+                <div id="result">
+         
+  
+
+
+            </div>
+
+
+          
+
+  <!-- BMI Bar -->
+  <div class="bmi-bar mx-auto" id="bmiBar">
+    <div class="underweight"></div>
+    <div class="normal"></div>
+    <div class="overweight"></div>
+    <div class="obese"></div>
+    <div class="needle" id="needle"></div>
+  </div>
+
+  <!-- Labels -->
+  <div class="d-flex justify-content-between">
+    <span class="text-primary fw-bold">Under.wt (&lt;18.5)</span>
+    <span class="text-success fw-bold">Normal (18.5–24.9)</span>
+    <span class="text-warning fw-bold">Over.wt (25–29.9)</span>
+    <span class="text-danger fw-bold">Obese (≥30)</span>
+  </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

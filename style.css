@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body::before{
+   content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    width: 100%;
+    background-image: url(./images/R.png);
+    background-size: cover;
+    opacity: 0.7;
+    background-repeat: no-repeat; 
+    z-index: -1;   
+}
+h1{
+    font-size: 2.5rem;
+}
+/* p{
+    font-size: 1.1rem;
+} */
+
+
+.bmi-bar {
+      display: flex;
+      height: 20px;
+      margin: 30px 0;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    .underweight { background: #3498db; flex: 14.5; } /* <18.5 */
+    .normal { background: #2ecc71; flex: 6.4; }       /* 18.5–24.9 */
+    .overweight { background: #e67e22; flex: 4.9; }  /* 25–29.9 */
+    .obese { background: #e74c3c; flex: 10; }        /* ≥30 */
+    
+    .needle {
+      position: absolute;
+      top: -20px;
+      width: 2px;
+      height: 40px;
+      background: black;
+      left: 0;
+      transition: left 0.5s ease;
+    }
