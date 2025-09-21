@@ -34,10 +34,11 @@ h1{
       overflow: hidden;
       position: relative;
     }
-    .underweight { background: #3498db; flex: 14.5; } /* <18.5 */
-    .normal { background: #2ecc71; flex: 6.4; }       /* 18.5–24.9 */
-    .overweight { background: #e67e22; flex: 4.9; }  /* 25–29.9 */
-    .obese { background: #e74c3c; flex: 10; }        /* ≥30 */
+   .underweight { background: #3498db; flex: 85; }   /* 10–18.5 (range 8.5) */
+.normal      { background: #2ecc71; flex: 64; }   /* 18.5–24.9 (range 6.4) */
+.overweight  { background: #e67e22; flex: 50; }   /* 25–29.9 (range 5) */
+.obese       { background: #e74c3c; flex: 100; }  /* 30–40 (range 10) */
+   
     
     .needle {
       position: absolute;

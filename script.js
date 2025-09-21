@@ -91,7 +91,7 @@ function moveNeedle(bmi) {
     const barWidth = bar.offsetWidth;
 
     const min = 10;  
-    const max = 35; 
+    const max = 40; 
 
     
     const clampedBMI = Math.max(min, Math.min(bmi, max));
